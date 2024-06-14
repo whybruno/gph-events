@@ -9,9 +9,9 @@
 <body>
   <header class="">
     <nav class="border-b-4 border-[#EF5C65] bg-[#143250]">
-      <div class="flex justify-between items-center h-16 sm:h-20 xl:h-24 mx-auto px-5 md:px-10 xl:px-20">
+      <div class="flex justify-between items-center h-16 sm:h-20 xl:h-24 mx-auto px-5 sm:px-10 xl:px-20">
         <a href="#"><img class="h-8 sm:h-10 xl:h-12" src="./assets/images/gph-logo-white.png" alt=""></a>
-        <div id="mobile-menu" class="w-8 h-8 sm:w-10 sm:h-10 bg-[url('./assets/images/menu.png')] hover:bg-[url('./assets/images/menu-hover.png')] bg-cover bg-center bg-no-repeat hover:cursor-pointer lg:hidden"></div>
+        <div id="menu" class="w-8 h-8 sm:w-10 sm:h-10 bg-[url('./assets/images/menu.png')] hover:bg-[url('./assets/images/menu-hover.png')] bg-cover bg-center bg-no-repeat hover:cursor-pointer lg:hidden"></div>
         <ul class="lg:flex md:space-x-12 lg:space-x-20 xl:space-x-36 hidden">
           <li class="font-medium text-lg lg:text-xl xl:text-2xl text-white hover:text-[#EF5C65]">
             <a class="" href="#">Events</a>
@@ -25,12 +25,77 @@
         </ul>
       </div>
     </nav>
+    <div id="mobile-menu" class="h-screen p-5 md:p-10 bg-[#143250] hidden lg:hidden">
+      <ul class="space-y-5 md:space-y-10">
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]">
+          <a class="" href="#">Events</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]">
+          <a class="" href="#">Sponsors</a>
+        </li>
+        <li class="font-medium text-lg lg:text-xl text-white hover:text-[#EF5C65]"> 
+          <a class="" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <!-- <div>
     <div class="px-20 h-640 bg-[url('./assets/images/bg-events.png')] bg-cover bg-no-repeat bg-top"></div>
   </div> -->
   <main>
-    <div class="grid grid-rows-1 grid-cols-1 lg:grid-cols-2 p-5 md:p-10 xl:p-20 gap-5 sm:gap-5 md:gap-10">
+    <div class="flex flex-col justify-center items-center h-96 2xl:h-screen p-5 md:p-10 xl:p-20 bg-[url('./assets/images/bg-hero-4.png')] bg-cover bg-center bg-no-repeat">
+      <h1 class="font-semibold text-center text-white md:text-balance text-2xl sm:text-3xl md:text-5xl lg:text-2xl xl:text-3xl 2xl:text-5xl leading-relaxed sm:leading-relaxed md:leading-snug">Global Reach. Strategic Impact. Innovative Solutions.</h1>
+    </div>
+    <div class="flex flex-col justify-center items-center h-fit px-5 py-10 sm:p-10 xl:p-20 bg-[#EF5C65]">
+      <p class="font-medium text-left lg:text-center text-white lg:text-balance text-xl sm:text-2xl md:text-3xl lg:text-2xl xl:text-3xl leading-relaxed sm:leading-relaxed md:leading-snug">
+        At Global Policy House, we are dedicated to showcasing Africa's most cutting-edge and innovative events. Our mission is to connect 54 African countries with over 180 million audiences worldwide, highlighting the continent's diverse and dynamic capabilities.
+      </p>
+      <!-- <div class="2xl:max-w-6xl grid grid-rows-2 grid-cols-3 2xl:gap-10">
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">55000+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            Social media engagements across 120+ countries
+          </p>
+        </div>
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">2000+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            Global Investor Network
+          </p>
+        </div>
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">25000+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            Conference delegate reach in 2 years
+          </p>
+        </div>
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">750+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            International Experts and Speakers from over 70 countries
+          </p>
+        </div>
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">5000+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            Virtual attendees at previous virtual events
+          </p>
+        </div>
+        <div class="p-5 bg-[#143250]">
+          <div class="font-bold text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-7xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">150+</div>
+          <div class="border-t-4 border-[#EF5C65]"></div>
+          <p class="font-normal text-white text-3xl sm:text-5xl md:text-6xl lg:text-4xl xl:text-5xl 2xl:text-xl my-2 sm:my-4 md:my-6 lg:my-4 xl:my-6 2xl:my-6">
+            Executive Women Leaders engaged with Global Policy House
+          </p>
+        </div>
+      </div> -->
+    </div>
+    <div class="grid grid-rows-1 grid-cols-1 lg:grid-cols-2 p-5 sm:p-10 xl:p-20 gap-5 sm:gap-5 md:gap-10">
       <a href="">
         <div class="flex flex-col p-5 sm:p-10 2xl:px-10 2xl:py-20 text-[#143250] hover:text-white border-2 rounded-lg border-[#143250] hover:bg-[#143250] hover:bg-[url('./assets/images/bg-1.png')] bg-cover bg-center bg-no-repeat">
           <p class="font-normal text-lg sm:text-2xl md:text-2xl lg:text-lg xl:text-xl 2xl:text-3xl text-end">October 18–21, 2024</p>
@@ -53,5 +118,6 @@
       </a> 
     </div>
   </main>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
